@@ -16,4 +16,4 @@ Letters phonemes are limited and are not easily understood by spelling a sequenc
 2. Get into the downloaded folder using the command ```cd Get-Spelling-Sequence```.
 3. Add to ```.env``` your Symbl ```APP_ID``` and ```APP_SECRET``` and save the file.
 4. Open ```index.py```, modify ```conversationId``` and save the new changes. 
-5. Run the file ```python index.py``` and spelled letter will be printed. 
+5. Run the file ```python index.py``` and if found the spelled letter sequence will be printed.
