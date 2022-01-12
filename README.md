@@ -15,6 +15,5 @@ The purpose of this package is to find a spelling sequence coming from a convers
 1. Download by using the command ```git clone https://github.com/symblai/Get-Spelling-Sequence```.
 2. Get into the downloaded folder using the command ```cd Get-Spelling-Sequence```.
 3. Add to ```.env``` your Symbl ```APP_ID``` and ```APP_SECRET``` and save the file.
-4. Open ```createSpeakerEvents.py``` and modify ```fileName``` path and ```conversationId```.
-5. Run the file ```python createSpeakerEvents.py``` and in case of success this message will be generated from PUT Speakers API: ```message":"Speaker events associated for conversationId: <ConversationId Value> successfully! The update should be reflected in all messages and insights along with this conversation``` 
-6. Check the results using message API [Link](https://docs.symbl.ai/docs/conversation-api/messages) or by using a POST Video Summary UI [Link](https://docs.symbl.ai/docs/api-reference/experience-api/post-video-summary-ui) with the same conversationId. 
+4. Open ```findSpellingSequence.py```, modify ```conversationId``` and save the new changes. 
+5. Run the file ```python findSpellingSequence.py``` and spelled letter will be printed. 
