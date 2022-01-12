@@ -5,7 +5,7 @@ Letters phonemes are limited and are not easily understood by spelling a sequenc
 # Pre-Requirements
 - Symbl appSecret and appId - If you don't have a Symbl account for signup look it up in this [Link](https://platform.symbl.ai/#/signup?utm_source=get-info&utm_medium=guy&utm_campaign=rep).
 - Orignal recorded file was processed in Symbl using Async Audio/Video API that was completed and generated a conversationId
-- The participant who spelled the word sequence will do it either by using the structure "<letter> as in <word>" or "<letter> like <word>". For example "A like apple", "B as in Boy". 
+- The participant who spelled the word sequence will do it either by using the structure ```<letter> as in <word>``` or ```<letter> like <word>```. For example "A like apple", "B as in Boy". 
 
 # How does this work?
 1. The script will use the messages API with "verbose=true" to get a JSON response with the messages word level.
