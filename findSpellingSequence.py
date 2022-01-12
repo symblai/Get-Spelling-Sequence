@@ -44,12 +44,21 @@ def getSpellingSequense(wordLevelmessages):
         prev = 0
         for words in item["words"]:
             s = re.sub(r'[^\w\s]','',words["word"]).lower()
+            # Spelling is <letter> "like" <word>
             if s.lower() == "like":
-                prev = 2 
+                prev = 2
+            # Spelling is <letter> "like a" <word>
+            elif prev == 2 and words["word"] == "a":
+                prev = 2    
             elif words["word"] == "as":
                 prev = 1
+            # Spelling is <letter> "as a" <word>
+            elif prev == 1 and words["word"] == "a":
+                prev = 2           
+            # Spelling is <letter> "as in" <word>
             elif prev == 1 and words["word"] == "in":
                 prev = 2
+            # print the spelled letter
             elif prev == 2:
                 print(words["word"][0].lower())
                 prev = 0
